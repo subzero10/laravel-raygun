@@ -1,25 +1,41 @@
 {
-    "name": "davibennun/laravel-raygun",
-    "description": "Laravel wrapper for raygun",
-    "keywords": ["raygun", "laravel"],
-    "authors": [
-        {
-            "name": "DaviBenNun",
-            "email": "davi@andradenunes.org"
-        }
+  "name": "davibennun/laravel-raygun",
+  "description": "Laravel wrapper for raygun",
+  "keywords": [
+    "raygun",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "DaviBenNun",
+      "email": "davi@andradenunes.org"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:subzero10/raygun4php.git"
+    },
+    {
+      "type": "composer",
+      "url": "https://packagist.org"
+    },
+    {
+      "packagist": false
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "~5.0",
+    "mindscape/raygun4php": "1.*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/migrations"
     ],
-    "require": {
-        "php": ">=5.4.0",
-        "illuminate/support": "~5.0",
-        "mindscape/raygun4php": "1.*"
-    },
-    "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
-        "psr-0": {
-            "Davibennun\\LaravelRaygun\\": "src/"
-        }
-    },
-    "minimum-stability": "dev"
+    "psr-0": {
+      "Davibennun\\LaravelRaygun\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
 }
