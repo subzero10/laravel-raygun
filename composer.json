@@ -27,7 +27,7 @@
   "require": {
     "php": ">=5.4.0",
     "illuminate/support": "~5.0",
-    "mindscape/raygun4php": "1.*"
+    "mindscape/raygun4php": "dev-master"
   },
   "autoload": {
     "classmap": [
